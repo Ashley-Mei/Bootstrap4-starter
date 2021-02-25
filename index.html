@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">  
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -29,10 +29,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-4 col-md-3">
+            <!--order first 会被推到右边-->
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm col-md">
+            <!--order first 会被推到左边-->
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
@@ -50,10 +52,10 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col col-sm col-md">
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
@@ -64,10 +66,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <!--xs只占4列，从sm到xl占2列-->             
-                <div class="col-4 col-sm-2">
+                <!--xs只占4列，从sm到xl占2列，offset：因为多出来一列，将整体向右推一列-->             
+                <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <!--取消默认带“·”的list格式-->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
