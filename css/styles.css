@@ -30,3 +30,14 @@ address{
     margin:0px;
     color:#0f0f0f;
 }
+
+/*避免navbar盖住网页的内容*/
+/*对于css来说，z-index z轴表示两个元素叠加顺序时的上下立体位置关系，大值将叠加在小值上面*/
+body {
+    padding: 50px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}

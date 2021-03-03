@@ -14,7 +14,29 @@
 </head>
 
 <body>
-
+    <!--建立navbar;同时设置暗色系（亮色系是navbar-light);在sm和xs中会折叠;bg-primary使用bootstrap默认背景颜色；将导航置顶/底（fixed-bottom）-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!--保持navbar和页面其他内容宽度一样-->
+        <div class="container">
+            <!--设置一个小按钮，可以把navbar收起来；data-taggle实际上是个JS组件;target表明按钮指向的一个元素的ID-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--突出显示你的公司名称；链接当前界面-->
+            <!--HTML超链接格式：<a href="url">链接文本</a>，其中href描述了链接的目标-->
+            <a class="navbar-brand mr-auto" href="#">Ristorante con Fusion</a>
+            <!--链接们将水平展示；设置右边距会尽量很宽，内容将尽可能的放到左边-->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <!--nav-item都将水平显示;active将高亮特定的页面，表示当前的位置-->
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -73,7 +95,7 @@
                     <!--取消默认带“·”的list格式-->
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
