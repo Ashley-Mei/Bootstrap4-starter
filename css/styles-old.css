@@ -1,0 +1,72 @@
+/*自定义一些css类，以供使用*/
+/*margin 边距，padding 填充，px 像素,border边距，min-height最小行高*/
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #9575CD ;
+    color:floralwhite;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+/*避免navbar盖住网页的内容*/
+/*对于css来说，z-index z轴表示两个元素叠加顺序时的上下立体位置关系，大值将叠加在小值上面*/
+body {
+    padding: 50px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.carousel {
+    background: #512DA8;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+/*直接用没有任何作用，需要和JQuery结合使用*/
+#carouselButton{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
