@@ -53,3 +53,18 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+
+.modal-content {
+  margin: 0px auto;
+  padding: 0px 0px;
+  background: #9575CD; }
+
+.modal-dialog {
+  background: #512DA8; }
+
+.close {
+  color: floralwhite; }

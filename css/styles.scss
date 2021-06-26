@@ -76,3 +76,21 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+.modal-header {
+    background: $background-dark;
+    color:floralwhite;
+}
+
+.modal-content {
+    @include zero-margin();
+    background: $background-light;
+}
+
+.modal-dialog {
+    background: $background-dark;
+}
+
+.close {
+    color:floralwhite;
+}
